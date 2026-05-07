@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b0b10">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Lime decor and design Inc. — Santa Ana CA</title>
+<meta name="description" content="Serving Santa Ana CA with quality you can count on. Call us today.">
+<meta property="og:title" content="Lime decor and design Inc.">
+<meta property="og:description" content="Serving Santa Ana CA with quality you can count on. Call us today.">
+<meta property="og:image" content="../../shared/interior-designer/banner.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzIiIGZpbGw9IiNjOWE4NGMiLz48dGV4dCB4PSIzMiIgeT0iNDQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXNpemU9IjM2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiI+TDwvdGV4dD48L3N2Zz4=">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:hidden;max-width:100%;background:#0b0b10;}
+body{overflow-x:hidden;max-width:100%;background:#0b0b10;}
+:root{
+  --dark:#0b0b10;
+  --accent:#c9a84c;
+  --light:#f8f7f4;
+  --white:#ffffff;
+  --font-h:'Figtree',sans-serif;
+  --font-b:'Inter',sans-serif;
+  --radius:10px;
+  --shadow:0 4px 24px rgba(0,0,0,0.08);
+  --trans:0.3s ease;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-b);color:#1a1a1a;background:var(--white);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+
+/* ── NAV ── */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 clamp(1.5rem,5vw,4rem);height:68px;display:flex;align-items:center;justify-content:space-between;background:rgba(0,0,0,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.06)}
+.nav-logo{font-family:var(--font-h);font-size:1rem;font-weight:700;color:var(--white);letter-spacing:.02em;text-decoration:none;white-space:nowrap}
+.nav-logo span{color:var(--accent)}
+.nav-links{display:flex;align-items:center;gap:2rem}
+.nav-links a{color:rgba(255,255,255,0.75);text-decoration:none;font-size:.88rem;font-weight:500;letter-spacing:.02em;transition:color var(--trans)}
+.nav-links a:hover{color:var(--white)}
+.nav-cta{background:var(--accent);color:var(--white)!important;padding:.45rem 1.1rem;border-radius:6px;font-weight:600!important}
+.nav-cta:hover{background:#1a6e38!important;color:var(--white)!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:22px;height:2px;background:var(--white);border-radius:2px;transition:var(--trans)}
+@media(max-width:768px){
+  .nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:rgba(0,0,0,0.97);flex-direction:column;padding:1.5rem 2rem;gap:1.2rem;border-top:1px solid rgba(255,255,255,0.08)}
+  .nav-links.open{display:flex}
+  .hamburger{display:flex}
+}
+
+/* ── HERO ── */
+.hero{min-height:100svh;background: url('../../shared/interior-designer/hero.png') center 30%/cover no-repeat scroll;display:flex;align-items:flex-start;padding-top:68px;position:relative;overflow:clip}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0}
+.hero-video-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(to bottom,rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.45) 55%,rgba(0,0,0,0.55) 85%,rgba(0,0,0,0) 100%)}
+.hero-ken-burns{animation:ken-burns 18s ease-in-out infinite alternate}
+@keyframes ken-burns{from{transform:scale(1) translate(0,0)}to{transform:scale(1.08) translate(-1%,1%)}}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%, #c9a84c18 0%, transparent 65%);animation:pulse-bg 6s ease-in-out infinite alternate;pointer-events:none;z-index:2}
+@keyframes pulse-bg{from{opacity:.4}to{opacity:.9}}
+.hero-inner{position:relative;z-index:3;padding:clamp(3rem,7vh,5rem) clamp(1.2rem,6vw,7rem) 0;max-width:760px;width:100%;padding-bottom:calc(clamp(7rem,13vh,10rem) + 90px)}
+@media(max-width:768px){
+  .hero{min-height:100svh;background-position:center center;background-size:cover;background-attachment:scroll}
+  .hero-inner{padding:2rem 1.2rem 0;padding-bottom:calc(8rem + 160px)}
+}
+.hero-eyebrow{display:inline-block;font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:1.4rem;padding:.3rem .8rem;border:1px solid #c9a84c55;border-radius:4px}
+.hero h1{font-family:var(--font-h);font-size:clamp(2rem,6vw,4.4rem);font-weight:800;color:var(--white);line-height:1.12;margin-bottom:1.4rem;letter-spacing:-.02em}
+@media(max-width:480px){.hero h1{font-size:clamp(1.75rem,8vw,2.4rem);line-height:1.15}}
+.hero-sub{font-size:clamp(1rem,1.8vw,1.2rem);color:rgba(255,255,255,0.7);line-height:1.7;max-width:560px;margin-bottom:1.2rem}
+
+/* ── NEW: Google Reviews badge ── */
+.reviews-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(255,255,255,0.1);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.15);border-radius:50px;padding:.45rem 1rem;margin-bottom:2rem}
+.reviews-stars{color:var(--accent);font-size:1rem;letter-spacing:.05em}
+.reviews-rating{color:var(--white);font-weight:700;font-size:.9rem}
+.reviews-count{color:rgba(255,255,255,0.6);font-size:.8rem}
+
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2.8rem}
+.btn-primary{background:var(--accent);color:var(--white);padding:.85rem 2rem;border-radius:8px;font-family:var(--font-h);font-weight:700;font-size:.95rem;text-decoration:none;border:none;cursor:pointer;transition:background var(--trans),transform var(--trans),box-shadow var(--trans);display:inline-block}
+.btn-primary:hover{background:#1a6e38;transform:translateY(-2px);box-shadow:0 8px 24px #c9a84c44}
+.btn-ghost{background:transparent;color:var(--white);padding:.85rem 2rem;border-radius:8px;font-family:var(--font-h);font-weight:600;font-size:.95rem;text-decoration:none;border:1.5px solid rgba(255,255,255,0.3);transition:border-color var(--trans),background var(--trans)}
+.btn-ghost:hover{border-color:var(--white);background:rgba(255,255,255,0.06)}
+.hero-phone{display:flex;align-items:center;gap:.6rem;color:rgba(255,255,255,0.6);font-size:.92rem;text-decoration:none;transition:color var(--trans)}
+.hero-phone:hover{color:var(--white)}
+.hero-phone svg{width:18px;height:18px;stroke:var(--accent)}
+
+/* ── FLOATING STATS (glassmorphism) ── */
+.stats-float{position:absolute;bottom:0;left:0;right:0;background:rgba(255,255,255,0.08);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.15);display:grid;grid-template-columns:repeat(4,1fr);z-index:10}
+.stat-item{padding:1.6rem 1rem;text-align:center;border-right:1px solid rgba(255,255,255,0.1)}
+.stat-item:last-child{border-right:none}
+.stat-num{font-family:var(--font-h);font-size:clamp(1.7rem,3vw,2.4rem);font-weight:800;color:var(--accent);line-height:1}
+.stat-lbl{font-size:.78rem;color:rgba(255,255,255,0.7);font-weight:500;letter-spacing:.04em;text-transform:uppercase;margin-top:.35rem}
+@media(max-width:640px){
+  .stats-float{grid-template-columns:repeat(2,1fr)}
+  .stat-item:nth-child(2){border-right:none}
+  .stat-item{padding:1rem .6rem}
+  .stat-num{font-size:1.5rem}
+  .stat-lbl{font-size:.7rem}
+}
+
+/* ── SECTION SHARED ── */
+.sec{padding:clamp(4rem,8vw,7rem) clamp(1.5rem,8vw,7rem)}
+.sec-eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:.8rem}
+.sec-hdr{font-family:var(--font-h);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;color:var(--dark);line-height:1.2;margin-bottom:1rem;letter-spacing:-.02em}
+.sec-sub{font-size:1.05rem;color:#555;line-height:1.7;max-width:540px;margin-bottom:3rem}
+.reveal{transform:translateY(28px);opacity:0;transition:transform .6s ease,opacity .6s ease}
+.reveal.visible{transform:translateY(0);opacity:1}
+
+/* ── SERVICES (with animated hover) ── */
+#services{background:#f8f7f4;padding-top:calc(clamp(4rem,8vw,7rem) + 80px)}
+.svcs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.svc-card{background:var(--white);border-radius:var(--radius);padding:2rem 1.6rem;border:1px solid #e8e8e8;border-left:3px solid transparent;transition:transform 0.25s ease,box-shadow 0.25s ease,border-left-color 0.25s ease;cursor:default}
+.svc-card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(0,0,0,0.12);border-left-color:var(--accent)}
+.svc-icon{width:44px;height:44px;background:var(--accent);border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem}
+.svc-icon svg{width:22px;height:22px;stroke:var(--white)}
+.svc-card h3{font-family:var(--font-h);font-size:1.05rem;font-weight:700;color:var(--dark);margin-bottom:.55rem}
+.svc-card p{font-size:.9rem;color:#555;line-height:1.65}
+@media(max-width:900px){.svcs-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.svcs-grid{grid-template-columns:1fr}}
+
+/* ── ABOUT ── */
+#about{padding:0}
+.about-wrap{display:grid;grid-template-columns:1fr 1fr;min-height:480px}
+.about-dark{background:var(--dark);padding:clamp(3rem,6vw,5rem) clamp(2rem,6vw,5rem);display:flex;flex-direction:column;justify-content:center}
+.about-dark .sec-eyebrow{color:var(--accent)}
+.about-dark .sec-hdr{color:var(--white)}
+.about-dark p{color:rgba(255,255,255,0.7);line-height:1.75;font-size:.97rem;margin-top:1rem}
+.about-dark p strong{color:rgba(255,255,255,0.9)}
+.about-light{background:var(--light);padding:clamp(3rem,6vw,5rem) clamp(2rem,6vw,5rem);display:flex;flex-direction:column;justify-content:center;gap:1.2rem}
+.cred-chip{display:flex;align-items:center;gap:1rem;background:var(--white);border-radius:var(--radius);padding:1.2rem 1.4rem;border:1px solid #e0e0e0;font-family:var(--font-h);font-weight:600;font-size:.97rem;color:var(--dark);box-shadow:0 2px 12px rgba(0,0,0,0.04)}
+.cred-icon{width:32px;height:32px;background:var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--white);font-size:.9rem;font-weight:800;flex-shrink:0}
+@media(max-width:768px){.about-wrap{grid-template-columns:1fr}}
+
+/* ── TESTIMONIALS (CSS auto-scroll carousel) ── */
+#testimonials{background:#f9f9f6;overflow:hidden}
+.carousel-track-wrapper{overflow:hidden;width:100%;max-width:100%}
+.carousel-track{display:flex;gap:1.5rem;animation:testi-scroll 40s linear infinite;width:max-content}
+.carousel-track:hover{animation-play-state:paused}
+@keyframes testi-scroll{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-50%)}
+}
+.testi-card{background:var(--white);border-radius:var(--radius);padding:2.4rem 2rem;box-shadow:var(--shadow);border:1px solid #ebebeb;position:relative;min-width:340px;max-width:380px;flex-shrink:0;box-sizing:border-box}
+@media(max-width:480px){.testi-card{min-width:280px;max-width:300px;padding:1.8rem 1.4rem}}
+.quote-mark{font-family:Georgia,serif;font-size:5rem;color:var(--accent);line-height:.6;opacity:.25;margin-bottom:.8rem;user-select:none}
+.testi-text{font-size:1.02rem;color:#333;line-height:1.75;margin-bottom:1.6rem}
+.testi-meta{border-top:1px solid #f0f0f0;padding-top:1rem;display:flex;align-items:center;gap:1rem}
+.testi-avatar{width:44px;height:44px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;color:var(--white);font-family:var(--font-h);font-weight:700;font-size:1.1rem;flex-shrink:0}
+.stars{color:var(--accent);font-size:.95rem;letter-spacing:.08em;display:block;margin-bottom:.25rem}
+.testi-name{font-family:var(--font-h);font-weight:700;font-size:.95rem;color:var(--dark)}
+.testi-loc{font-size:.8rem;color:#888;margin-top:.1rem}
+
+/* ── GALLERY ── */
+#gallery{background:var(--white)}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;width:100%;max-width:100%;overflow:hidden}
+.gallery-item{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;min-height:180px;min-width:0}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.25s ease,filter 0.25s ease;display:block}
+.gallery-item:hover img{transform:scale(1.03);filter:brightness(1.08)}
+.gallery-warm img{filter:sepia(0.15) saturate(1.1)}
+.gallery-cool img{filter:hue-rotate(15deg) saturate(0.9)}
+.gallery-bright img{filter:brightness(1.05) contrast(1.05)}
+.gallery-warm:hover img{filter:sepia(0.15) saturate(1.1) brightness(1.08);transform:scale(1.03)}
+.gallery-cool:hover img{filter:hue-rotate(15deg) saturate(0.9) brightness(1.08);transform:scale(1.03)}
+.gallery-bright:hover img{filter:brightness(1.12) contrast(1.05);transform:scale(1.03)}
+@media(max-width:640px){
+  .gallery-grid{grid-template-columns:repeat(2,1fr);gap:.5rem}
+  #gallery{overflow:hidden;padding-left:1rem;padding-right:1rem}
+}
+
+/* ── BANNER ── */
+.banner{background:linear-gradient(to right, rgba(0,0,0,0.88) 45%, rgba(0,0,0,0.18) 100%), url('../../shared/interior-designer/banner.png') center/cover no-repeat;min-height:460px;display:flex;align-items:center;padding:clamp(3rem,6vw,5rem) clamp(1.5rem,8vw,7rem)}
+.banner-content{max-width:560px}
+.banner-content .sec-eyebrow{color:var(--accent)}
+.banner-content h2{font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:800;color:var(--white);line-height:1.15;margin-bottom:1.1rem;letter-spacing:-.02em}
+.banner-content p{color:rgba(255,255,255,0.75);line-height:1.7;font-size:1rem;margin-bottom:2rem}
+
+/* ── CTA ── */
+#contact{background:linear-gradient(135deg, #c9a84c 0%, #c9a84cdd 100%);padding:clamp(4rem,8vw,7rem) clamp(1.5rem,8vw,7rem);text-align:center}
+#contact .sec-eyebrow{color:rgba(255,255,255,0.7)}
+#contact h2{font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:800;color:var(--white);margin-bottom:1rem;letter-spacing:-.02em}
+#contact p{color:rgba(255,255,255,0.8);font-size:1.05rem;line-height:1.7;max-width:520px;margin:0 auto 2.4rem}
+.cta-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-white{background:var(--white);color:var(--accent);padding:.9rem 2.2rem;border-radius:8px;font-family:var(--font-h);font-weight:700;font-size:.95rem;text-decoration:none;transition:transform var(--trans),box-shadow var(--trans)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,0.2)}
+.btn-outline-white{background:transparent;color:var(--white);padding:.9rem 2.2rem;border-radius:8px;font-family:var(--font-h);font-weight:600;font-size:.95rem;text-decoration:none;border:2px solid rgba(255,255,255,0.6);transition:border-color var(--trans),background var(--trans)}
+.btn-outline-white:hover{border-color:var(--white);background:rgba(255,255,255,0.1)}
+
+/* ── LOCATION MAP ── */
+.location-section{background:var(--light);padding:clamp(3rem,6vw,5rem) clamp(1.5rem,8vw,7rem)}
+.location-inner{display:grid;grid-template-columns:1fr 1.4fr;gap:3rem;align-items:center;max-width:1100px;margin:0 auto}
+.location-info{}
+.location-info h2{font-family:var(--font-h);font-size:clamp(1.6rem,3vw,2.2rem);color:var(--dark);margin-bottom:1rem}
+.location-info p{color:#555;line-height:1.7;margin-bottom:1.5rem}
+.location-detail{display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.9rem;font-size:.95rem;color:#444}
+.location-detail svg{flex-shrink:0;margin-top:2px}
+.map-embed{border-radius:16px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,0.12);height:320px}
+.map-embed iframe{width:100%;height:100%;border:0;display:block}
+.btn-maps{display:inline-flex;align-items:center;gap:.5rem;background:var(--accent);color:#fff;padding:.75rem 1.6rem;border-radius:8px;font-family:var(--font-h);font-weight:600;font-size:.9rem;text-decoration:none;transition:opacity .2s}
+.btn-maps:hover{opacity:.85}
+@media(max-width:768px){.location-inner{grid-template-columns:1fr}.map-embed{height:240px}}
+
+/* ── FOOTER ── */
+footer{background:var(--dark);padding:clamp(2.5rem,5vw,4rem) clamp(1.5rem,8vw,7rem);border-top:1px solid rgba(255,255,255,0.06)}
+.footer-inner{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:3rem;margin-bottom:2.5rem}
+.footer-brand .nav-logo{font-size:1.05rem;display:block;margin-bottom:.8rem}
+.footer-brand p{color:rgba(255,255,255,0.45);font-size:.85rem;line-height:1.65}
+.footer-col h4{font-family:var(--font-h);font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,0.4);margin-bottom:1rem}
+.footer-col a{display:block;color:rgba(255,255,255,0.6);text-decoration:none;font-size:.88rem;margin-bottom:.5rem;transition:color var(--trans)}
+.footer-col a:hover{color:var(--white)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+.footer-bottom p{color:rgba(255,255,255,0.3);font-size:.8rem}
+@media(max-width:768px){.footer-inner{grid-template-columns:1fr}}
+.social-links{display:flex;gap:.7rem;margin-top:1rem;flex-wrap:wrap}
+.social-link{width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.6);text-decoration:none;transition:border-color var(--trans),color var(--trans),background var(--trans)}
+.social-link:hover{border-color:var(--accent);color:var(--accent);background:rgba(255,255,255,0.05)}
+.social-link svg{width:16px;height:16px}
+.badges-strip{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:1.2rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,0.08)}
+.badge-img{height:40px;width:auto;object-fit:contain;filter:brightness(0.85) grayscale(0.2);transition:filter var(--trans)}
+.badge-img:hover{filter:brightness(1) grayscale(0)}
+.contact-form{background:rgba(255,255,255,0.1);border-radius:12px;padding:2rem;max-width:540px;margin:0 auto;text-align:left}
+.contact-form .form-row{margin-bottom:1rem}
+.contact-form label{display:block;font-size:.8rem;font-weight:600;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.4rem}
+.contact-form input,.contact-form textarea{width:100%;padding:.75rem 1rem;border-radius:6px;border:1.5px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.08);color:var(--white);font-family:var(--font-b);font-size:.95rem;outline:none;transition:border-color var(--trans)}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:rgba(255,255,255,0.35)}
+.contact-form input:focus,.contact-form textarea:focus{border-color:rgba(255,255,255,0.6)}
+.contact-form textarea{min-height:110px;resize:vertical}
+.contact-form .form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:540px){.contact-form .form-row-2{grid-template-columns:1fr}}
+
+/* ── NEW: Sticky mobile CTA bar ── */
+.mobile-cta-bar{display:none}
+@media(max-width:768px){
+  .mobile-cta-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--dark);padding:.7rem 1rem;padding-bottom:calc(.7rem + env(safe-area-inset-bottom,0px));align-items:center;justify-content:space-between;box-shadow:0 -4px 20px rgba(0,0,0,0.25)}
+  .mobile-cta-phone{display:flex;align-items:center;gap:.5rem;color:var(--white);text-decoration:none;font-size:.9rem;font-weight:600}
+  .mobile-cta-phone svg{width:18px;height:18px;stroke:var(--white);fill:none;stroke-width:2}
+  .mobile-cta-btn{background:var(--accent);color:var(--white);padding:.6rem 1.2rem;border-radius:6px;font-family:var(--font-h);font-weight:700;font-size:.85rem;text-decoration:none;white-space:nowrap}
+  /* Add bottom padding to body so content isn't hidden behind sticky bar */
+  body{padding-bottom:70px}
+}
+
+/* ── NEW: Floating contact button (desktop only) ── */
+.floating-contact{display:none}
+@media(min-width:769px){
+  .floating-contact{display:flex;position:fixed;bottom:2rem;right:2rem;z-index:9998;width:56px;height:56px;border-radius:50%;background:var(--accent);color:var(--white);align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 20px rgba(0,0,0,0.2);border:none;text-decoration:none;animation:fab-pulse 2s ease-in-out infinite}
+  .floating-contact svg{width:24px;height:24px;stroke:var(--white);fill:none;stroke-width:2}
+  .floating-contact:hover{transform:scale(1.08);box-shadow:0 6px 28px rgba(0,0,0,0.3)}
+}
+@keyframes fab-pulse{0%,100%{box-shadow:0 4px 20px rgba(0,0,0,0.2)}50%{box-shadow:0 4px 20px rgba(0,0,0,0.2),0 0 0 8px #c9a84c22}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="#" class="nav-logo">Lime<span>.</span></a>
+  <div class="nav-links" id="nav-links">
+    <a href="#services">Services</a><a href="#about">About</a><a href="#testimonials">Reviews</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+    <a href="tel:+119496879345" class="nav-cta">Call Now</a>
+  </div>
+  <div class="hamburger" id="hamburger" onclick="document.getElementById('nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-video-overlay hero-ken-burns"></div>
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Santa Ana CA — Licensed & Insured</div>
+    <h1>Trusted Interior Designer in Santa.</h1>
+    <p class="hero-sub">Serving Santa Ana CA with quality you can count on. Call us today.</p>
+    <div class="reviews-badge">
+      <svg width="14" height="14" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 0 0 1 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+      <span class="reviews-stars">★★★★★</span>
+      <span class="reviews-rating">4.7</span>
+      <span class="reviews-count">(135 reviews on Google)</span>
+    </div>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">Get a Free Quote</a>
+      <a href="#services" class="btn-ghost">View Our Services</a>
+    </div>
+    <a href="tel:+119496879345" class="hero-phone">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.32 6.32l.94-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      +1 949-687-9345
+    </a>
+  </div>
+  <div class="stats-float">
+    <div class="stat-item"><div class="stat-num">Free</div><div class="stat-lbl">Estimates</div></div>
+<div class="stat-item"><div class="stat-num">Local</div><div class="stat-lbl">Santa Ana</div></div>
+<div class="stat-item"><div class="stat-num" data-target="5" data-suffix="★">0★</div><div class="stat-lbl">Rated</div></div>
+<div class="stat-item"><div class="stat-num">Fast</div><div class="stat-lbl">Response</div></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec" id="services">
+  <p class="sec-eyebrow reveal">What We Do</p>
+  <h2 class="sec-hdr reveal">Services Built for Santa</h2>
+  <p class="sec-sub reveal">From routine maintenance to complete transformations — every job done right, on time, and to the highest standard.</p>
+  <div class="svcs-grid">
+    <div class="svc-card">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V11M7 7c0-2.8 2.2-5 5-5s5 2.2 5 5c0 4-5 9-5 9S7 11 7 7z"/></svg></div>
+          <h3>Full Room Design</h3>
+          <p>Professional interior designer services tailored to your needs.</p>
+        </div>
+<div class="svc-card">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+          <h3>Consultations</h3>
+          <p>Professional interior designer services tailored to your needs.</p>
+        </div>
+<div class="svc-card">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+          <h3>Space Planning</h3>
+          <p>Professional interior designer services tailored to your needs.</p>
+        </div>
+<div class="svc-card">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+          <h3>Furniture Selection</h3>
+          <p>Professional interior designer services tailored to your needs.</p>
+        </div>
+<div class="svc-card">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+          <h3>Staging</h3>
+          <p>Professional interior designer services tailored to your needs.</p>
+        </div>
+<div class="svc-card">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0"/><path d="M12 8v4l3 3"/></svg></div>
+          <h3>Renovation Support</h3>
+          <p>Professional interior designer services tailored to your needs.</p>
+        </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-wrap">
+    <div class="about-dark">
+      <p class="sec-eyebrow">About Us</p>
+      <h2 class="sec-hdr">Our Story</h2>
+      <p>Lime decor and design Inc. provides interior designer services in Santa Ana CA.</p>
+      
+    </div>
+    <div class="about-light">
+      <div class="cred-chip"><span class="cred-icon">✓</span>Licensed & Insured</div>
+<div class="cred-chip"><span class="cred-icon">✓</span>Experienced Team</div>
+<div class="cred-chip"><span class="cred-icon">✓</span>Free Estimates</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sec" id="testimonials">
+  <p class="sec-eyebrow reveal">Client Reviews</p>
+  <h2 class="sec-hdr reveal">What Santa Customers Say</h2>
+  <div class="carousel-track-wrapper">
+    <div class="carousel-track">
+      <div class="testi-card">
+          <div class="quote-mark">"</div>
+          <p class="testi-text">Exceptional service from start to finish. The team was professional, thorough, and delivered exactly what they promised. Will absolutely use them again.</p>
+          <div class="testi-meta">
+            <div class="testi-avatar">SM</div>
+            <div>
+              <span class="stars">★★★★★</span>
+              <div class="testi-name">Sarah M.</div>
+              <div class="testi-loc">Santa</div>
+            </div>
+          </div>
+        </div>
+<div class="testi-card">
+          <div class="quote-mark">"</div>
+          <p class="testi-text">Fair pricing, quality work, and great communication throughout the whole project. Exactly what you want from a service company.</p>
+          <div class="testi-meta">
+            <div class="testi-avatar">DK</div>
+            <div>
+              <span class="stars">★★★★★</span>
+              <div class="testi-name">David K.</div>
+              <div class="testi-loc">Santa</div>
+            </div>
+          </div>
+        </div>
+<div class="testi-card">
+          <div class="quote-mark">"</div>
+          <p class="testi-text">I've used several companies in Santa over the years. These are by far the best. Responsive, professional, and the results speak for themselves.</p>
+          <div class="testi-meta">
+            <div class="testi-avatar">JL</div>
+            <div>
+              <span class="stars">★★★★★</span>
+              <div class="testi-name">Jennifer L.</div>
+              <div class="testi-loc">Santa</div>
+            </div>
+          </div>
+        </div>
+<div class="testi-card">
+          <div class="quote-mark">"</div>
+          <p class="testi-text">Exceptional service from start to finish. The team was professional, thorough, and delivered exactly what they promised. Will absolutely use them again.</p>
+          <div class="testi-meta">
+            <div class="testi-avatar">SM</div>
+            <div>
+              <span class="stars">★★★★★</span>
+              <div class="testi-name">Sarah M.</div>
+              <div class="testi-loc">Santa</div>
+            </div>
+          </div>
+        </div>
+<div class="testi-card">
+          <div class="quote-mark">"</div>
+          <p class="testi-text">Fair pricing, quality work, and great communication throughout the whole project. Exactly what you want from a service company.</p>
+          <div class="testi-meta">
+            <div class="testi-avatar">DK</div>
+            <div>
+              <span class="stars">★★★★★</span>
+              <div class="testi-name">David K.</div>
+              <div class="testi-loc">Santa</div>
+            </div>
+          </div>
+        </div>
+<div class="testi-card">
+          <div class="quote-mark">"</div>
+          <p class="testi-text">I've used several companies in Santa over the years. These are by far the best. Responsive, professional, and the results speak for themselves.</p>
+          <div class="testi-meta">
+            <div class="testi-avatar">JL</div>
+            <div>
+              <span class="stars">★★★★★</span>
+              <div class="testi-name">Jennifer L.</div>
+              <div class="testi-loc">Santa</div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- GALLERY -->
+<section class="sec" id="gallery">
+  <p class="sec-eyebrow reveal">Portfolio</p>
+  <h2 class="sec-hdr reveal">Our Work</h2>
+  <p class="sec-sub reveal">See the quality and craftsmanship we bring to every project.</p>
+  <div class="gallery-grid">
+    <div class="gallery-item "><img src="../../shared/interior-designer/gallery_0.png" alt="Our work 1" loading="lazy"></div>
+<div class="gallery-item gallery-warm"><img src="../../shared/interior-designer/gallery_1.png" alt="Our work 2" loading="lazy"></div>
+<div class="gallery-item gallery-cool"><img src="../../shared/interior-designer/gallery_2.png" alt="Our work 3" loading="lazy"></div>
+<div class="gallery-item gallery-bright"><img src="../../shared/interior-designer/gallery_3.png" alt="Our work 4" loading="lazy"></div>
+<div class="gallery-item "><img src="../../shared/interior-designer/gallery_4.png" alt="Our work 5" loading="lazy"></div>
+<div class="gallery-item gallery-warm"><img src="../../shared/interior-designer/gallery_5.png" alt="Our work 6" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- BANNER -->
+<section class="banner">
+  <div class="banner-content">
+    <p class="sec-eyebrow">Why Choose Us</p>
+    <h2>Quality You Can See. Results That Last.</h2>
+    <p>Every project is backed by over 10+ years of hands-on experience and a commitment to doing it right the first time.</p>
+    <a href="#contact" class="btn-primary">Get Your Free Estimate</a>
+  </div>
+</section>
+
+<!-- CTA / CONTACT -->
+<section class="sec" id="contact">
+  <p class="sec-eyebrow">Get In Touch</p>
+  <h2>Ready to get started?</h2>
+  <p>Contact Lime decor and design Inc. today for a free estimate. Same-day service available.</p>
+  <form class="contact-form" action="mailto:limedecoranddesign@gmail.com" method="post" enctype="text/plain">
+    <div class="form-row-2">
+      <div class="form-row">
+        <label for="cf-name">Your Name</label>
+        <input type="text" id="cf-name" name="Name" placeholder="John Smith" required>
+      </div>
+      <div class="form-row">
+        <label for="cf-email">Email Address</label>
+        <input type="email" id="cf-email" name="Email" placeholder="john@email.com" required>
+      </div>
+    </div>
+    <div class="form-row">
+      <label for="cf-phone">Phone (optional)</label>
+      <input type="tel" id="cf-phone" name="Phone" placeholder="(555) 000-0000">
+    </div>
+    <div class="form-row">
+      <label for="cf-msg">How can we help?</label>
+      <textarea id="cf-msg" name="Message" placeholder="Tell us about your project..."></textarea>
+    </div>
+    <button type="submit" class="btn-white" style="width:100%;text-align:center;border:none;cursor:pointer;font-size:1rem;padding:1rem;">Send Message</button>
+  </form>
+  <div style="display:flex;gap:1rem;justify-content:center;margin-top:1.5rem;flex-wrap:wrap">
+    <a href="tel:+119496879345" class="btn-outline-white">📞 +1 949-687-9345</a>
+  </div>
+</section>
+
+
+<!-- LOCATION MAP -->
+<section class="location-section">
+  <div class="location-inner">
+    <div class="location-info">
+      <p class="sec-eyebrow">Find Us</p>
+      <h2>Visit Us in Santa</h2>
+      <p>We proudly serve Santa Ana CA and the surrounding area. Stop by or give us a call — we're always happy to talk about your project.</p>
+      <div class='location-detail'><svg width='18' height='18' fill='none' stroke='currentColor' stroke-width='2' viewBox='0 0 24 24'><path d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z'/><circle cx='12' cy='9' r='2.5'/></svg><span>Santa Ana CA</span></div>
+      <div class='location-detail'><svg width='18' height='18' fill='none' stroke='currentColor' stroke-width='2' viewBox='0 0 24 24'><path d='M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z'/></svg><span><a href='tel:+19496879345' style='color:inherit;text-decoration:none'>+1 949-687-9345</a></span></div>
+      <br>
+      <a href="https://www.google.com/maps/search/Lime%20decor%20and%20design%20Inc.%20Santa%20Ana%20CA" target="_blank" rel="noopener" class="btn-maps">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        Get Directions
+      </a>
+    </div>
+    <div class="map-embed">
+      <iframe src="https://maps.google.com/maps?q=Lime%20decor%20and%20design%20Inc.%20Santa%20Ana%20CA&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lime decor and design Inc. location map"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo">Lime<span style="color:var(--accent)">.</span></a>
+      <p>Serving Santa Ana CA with quality you can count on. Call us today....</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#services">Full Room Design</a><a href="#services">Consultations</a><a href="#services">Space Planning</a><a href="#services">Furniture Selection</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:+119496879345">+1 949-687-9345</a>
+      <a href="mailto:limedecoranddesign@gmail.com">limedecoranddesign@gmail.com</a>
+      <a href="#">Santa Ana CA</a>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>© 2026 Lime decor and design Inc.. All rights reserved.</p>
+    <p>Santa Ana CA</p>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CTA BAR -->
+<div class="mobile-cta-bar">
+  <a href="tel:+119496879345" class="mobile-cta-phone">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.32 6.32l.94-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    +1 949-687-9345
+  </a>
+  <a href="#contact" class="mobile-cta-btn">Get a Free Quote</a>
+</div>
+
+<!-- FLOATING CONTACT BUTTON (desktop) -->
+<a href="#contact" class="floating-contact" aria-label="Contact us">
+  <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+</a>
+
+<script>
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal');
+const svcCards = document.querySelectorAll('.svc-card');
+const credChips = document.querySelectorAll('.cred-chip');
+
+[...svcCards, ...credChips].forEach(el => el.classList.add('reveal'));
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+  });
+}, {threshold: 0.12, rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Count-up
+const countEls = document.querySelectorAll('.stat-num[data-target]');
+const countObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target;
+    const target = parseInt(el.dataset.target);
+    const suffix = el.dataset.suffix || '';
+    const dur = 1600;
+    const step = dur / target;
+    let cur = 0;
+    const timer = setInterval(() => {
+      cur = Math.min(cur + Math.ceil(target / 60), target);
+      el.textContent = cur + suffix;
+      if (cur >= target) clearInterval(timer);
+    }, step);
+    countObserver.unobserve(el);
+  });
+}, {threshold: 0.5});
+countEls.forEach(el => countObserver.observe(el));
+
+// Nav scroll style
+window.addEventListener('scroll', () => {
+  document.querySelector('.nav').style.background = window.scrollY > 60
+    ? 'rgba(0,0,0,0.97)' : 'rgba(0,0,0,0.92)';
+});
+
+// Hamburger close on outside click
+const ham = document.getElementById('hamburger');
+const nav = document.getElementById('nav-links');
+document.addEventListener('click', e => {
+  if (!ham.contains(e.target) && !nav.contains(e.target)) nav.classList.remove('open');
+});
+</script>
+</body>
+</html>
